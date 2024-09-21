@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ServitorConnect 2302</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ServitorConnect 2302</h1>
+        <form id="intentionForm" action="start_intention.php" method="POST">
+            <textarea name="intention" id="intentionInput" rows="5" cols="50" placeholder="Enter your intention here..." required></textarea>
+            <div class="button-group">
+                <button type="submit" id="startBtn">Start Intention</button>
+                <input type="file" id="loadFile" style="display: none;">
+                <button type="button" id="loadFileBtn">Load File</button>
+            </div>
+            <label>
+                <input type="checkbox" id="repostCheckbox"> Repost every hour
+            </label>
+        </form>
+
+        <div id="intentionStatus" class="hidden">
+            <p><b>Your intention is being amplified by the Servitor.<br><br>You submitted the Intention:</b></p>
+            <p id="submittedIntention"></p>
+            <button id="stopBtn">Stop Intention</button>
+            <b><div id="timer" class="timer">00:00:00</div></b> <!-- Timer added -->
+        </div>
+    </div>
+
+    <script src="intention_control.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container styling for the entire form and content */
+.container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Styling for the main title */
+h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Styling for the textarea (intention input) */
+textarea {
+    width: 100%;
+    height: 120px;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize: none;
+    white-space: pre-wrap; /* Preserves new lines and spaces */
+    word-wrap: break-word; /* Wraps long words if needed */
+}
+
+/* Button group to align buttons horizontally */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between buttons */
+    margin-bottom: 20px;
+}
+
+/* General button styling */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: #45a049;
+}
+
+/* Hidden elements */
+.hidden {
+    display: none;
+}
+
+/* Styling for Servitor connection status */
+#servitorStatus {
+    margin-top: 20px;
+    background-color: #e0f7fa;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Styling for the timer */
+.timer {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Styling for displaying the submitted intention with wrapping */
+#submittedIntention {
+    white-space: pre-wrap; /* Preserves line breaks */
+    word-wrap: break-word; /* Breaks long lines */
+    margin-top: 10px;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    textarea {
+        height: 100px;
+    }
+}
